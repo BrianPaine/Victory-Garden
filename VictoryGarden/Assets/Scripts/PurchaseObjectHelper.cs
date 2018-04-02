@@ -13,5 +13,14 @@ public class PurchaseObjectHelper : MonoBehaviour {
     public Text CostBG;
 
     public Image Picture;
+    public Button PurchaseButton;
 
+    public int AssociatedProduceItem;
+
+    public PopulatePurchaseMenu PPM;
+
+    public void ButtonPressed()
+    {
+        PPM.ButtonPressed(AssociatedProduceItem);
+    }
 }

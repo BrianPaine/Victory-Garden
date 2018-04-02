@@ -11,5 +11,6 @@ public class GameData {
 
 
     //player data
-    public static string Name;
+    public static string Name = "";
+    public static double Gold = 0;
 }
