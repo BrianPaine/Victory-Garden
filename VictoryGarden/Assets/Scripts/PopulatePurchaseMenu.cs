@@ -25,7 +25,9 @@ public class PopulatePurchaseMenu : MonoBehaviour {
 
     public void ButtonPressed(int associatedVal)
     {
-        GameData.All_Produce[associatedVal].TotalOwned++;
+		if (GameData.Gold >= (CalcHelper.CalculateProduceCost(associatedVal))){
+			GameData.All_Produce[associatedVal].TotalOwned++;
+		}
         //Debug.Log(associatedVal);
     }
 
